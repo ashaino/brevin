@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hospital Locations</title>
+  <title>Hospital Locations & Delivery Checklist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
       margin: 0;
+    }
+
+    h1, h2 {
+      text-align: center;
     }
 
     .entry {
@@ -44,8 +48,38 @@
       text-decoration: underline;
     }
 
-    h1 {
+    .checklist {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .checklist h2 {
+      margin-bottom: 20px;
+    }
+
+    .checklist ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .checklist li {
+      margin: 10px 0;
+    }
+
+    .checklist input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    footer {
       text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
@@ -53,15 +87,16 @@
 
   <h1>Important Locations</h1>
 
+  <!-- Hospital Entries -->
   <div class="entry">
     <img class="qr" src="/ajax-hospital-qr.png" alt="Ajax Hospital QR">
     <div class="details">
       <strong>Labour & Delivery - Lakeridge Health Ajax & Pickering Hospital</strong><br>
       580 Harwood Ave S, ON L1S 2J4<br>
       L & D Extension: 1201<br>
-      <p>Entrance: West (right turn)</p><br>
+	  <b>Entrance: West (right turn)</b><br>
       General line: <a href="tel:9056832320">(905) 683-2320</a><br>
-      <a href="https://maps.app.goo.gl/qYUW1NDKqjSUFJTD8">https://maps.app.goo.gl/qYUW1NDKqjSUFJTD8</a>
+      <a <a href="https://maps.app.goo.gl/qYUW1NDKqjSUFJTD8">https://maps.app.goo.gl/qYUW1NDKqjSUFJTD8</a>
       <a href="https://www.lakeridgehealth.on.ca/">https://www.lakeridgehealth.on.ca/</a>
     </div>
   </div>
@@ -86,6 +121,29 @@
       <a href="tel:9054341662">(905) 434-1662</a>
     </div>
   </div>
+
+  <!-- Checklist -->
+  <div class="checklist">
+    <h2>Delivery Checklist</h2>
+    <ul>
+      <li><label><input type="checkbox"> Charge Speaker</label></li>
+      <li><label><input type="checkbox"> Deflate birth ball (remove in car)</label></li>
+      <li><label><input type="checkbox"> Put deflater in car again</label></li>
+      <li><label><input type="checkbox"> Take birth ball</label></li>
+      <li><label><input type="checkbox"> Apple + Android phone chargers + cables (optional)</label></li>
+      <li><label><input type="checkbox"> Colostrum collectors</label></li>
+      <li><label><input type="checkbox"> Watch (black)</label></li>
+      <li><label><input type="checkbox"> Cap</label></li>
+      <li><label><input type="checkbox"> Purse</label></li>
+      <li><label><input type="checkbox"> Specs</label></li>
+      <li><label><input type="checkbox"> Laptop + Charger</label></li>
+      <li><label><input type="checkbox"> "07-25-15"</label></li>
+    </ul>
+  </div>
+
+  <footer>
+    Quick reference for Ashain – Baby delivery prep
+  </footer>
 
 </body>
 </html>
